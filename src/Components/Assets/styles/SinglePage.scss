@@ -1,0 +1,191 @@
+.singlepage {
+  .singlepage-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+
+    .back-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 30px;
+      margin-bottom: 20px;
+      background-color: #0a8e95;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #07767c;
+      }
+
+    }
+
+    .product-container {
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #2c2c35;
+
+      .product-wrapper {
+        background-color: #2c2c35;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .left-product-container {
+          background-color: #2c2c35;
+          width: 50%;
+          max-width: 600px;
+          max-height: 600px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            background-color: #2c2c35;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+          }
+        }
+
+        .right-product-container {
+          background-color: #2c2c35;
+          .product-details {
+            color: white;
+            background-color: #2c2c35;
+
+            h1 {
+              font-size: 46px;
+              background-color: #2c2c35;
+              color: white;
+            }
+
+            p {
+              font-size: 20px;
+              background-color: #2c2c35;
+              color: white;
+            }
+
+            .product-size {
+              background-color: #2c2c35;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              font-size: 20px;
+              margin-top: 20px;
+
+              p {
+                margin-bottom: 10px;
+                font-style: italic;
+                font-size: 19px;
+                text-align: left;
+              }
+
+              .size-buttons {
+                background-color: #2c2c35;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+
+                button.size-button {
+                  background-color: white;
+                  color: #1A1A22;
+                  border: 1px solid #1A1A22;
+                  width: calc(20% - 10px);
+                  height: 40px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin-right: 10px;
+                  margin-bottom: 10px;
+                  cursor: pointer;
+                  font-size: 16px;
+                  transition: background-color 0.3s;
+
+                  &:nth-child(5n) {
+                    margin-right: 0;
+                  }
+
+                  &:hover {
+                    background-color: #1A1A22;
+                    color: white;
+                  }
+
+                  &.selected {
+                    background-color: #1A1A22;
+                    color: white;
+                  }
+                }
+              }
+            }
+
+            .product-minidetails {
+              background-color: #2c2c35;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+
+              .SKU,
+              .Category-product {
+                background-color: #2c2c35;
+                display: flex;
+                flex-direction: row;
+
+                h3 {
+                  background-color: #2c2c35;
+                  font-size: 20px;
+                  color: white;
+                }
+              }
+            }
+
+            .products-btns {
+              background-color: #2c2c35;
+              margin: 20px;
+
+              .linki-prod {
+                background-color: #2c2c35;
+
+                button {
+                  padding: 10px 20px;
+                  background-color: white;
+                  color: #1A1A22;
+                  border: none;
+                  cursor: pointer;
+                  margin-right: 10px;
+                  transition: background-color 0.3s;
+
+                  &:last-child {
+                    margin-right: 10px;
+                  }
+
+                  &:hover {
+                    background-color: #07767c;
+                    color: white;
+                  }
+                }
+              }
+
+              .wishlist {
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .product-not-found {
+      color: white;
+      text-align: center;
+      font-size: 24px;
+    }
+  }
+}

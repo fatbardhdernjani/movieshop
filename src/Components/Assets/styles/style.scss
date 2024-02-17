@@ -1,0 +1,25 @@
+form,
+input,
+label,
+.login div,
+.login {
+    background-color: #eee;
+}
+
+.login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form {
+        max-width: 400px;
+        border: 1px solid black;
+        padding: 15px;
+        
+        .form-grup {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
